@@ -7,6 +7,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HomeController {
+    @RequestMapping("/")
+    public String home(){
+        return "index";
+    }
 
     @RequestMapping("/loadform")
     public String loadFormPage(){
